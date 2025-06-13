@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="container my-5">
+    <h1 class="text-center mb-4">To-Do App</h1>
+
+    <div class="mb-4">
+      <input
+        type="text"
+        id="todoName"
+        class="form-control mb-2"
+        placeholder="Task Name"
+      />
+      <input
+        type="text"
+        id="todoDesc"
+        class="form-control mb-2"
+        placeholder="Task Description"
+      />
+      <button class="btn btn-primary" onclick="addTodo()">Add Task</button>
+    </div>
+
+    <h3 class="mt-4 text-primary">🕒 Pending Tasks</h3>
+    <div id="todoList" class="row g-3"></div>
+
+    <h3 class="mt-4 text-success">✅ Added Tasks</h3>
+    <div id="addedTasks" class="row g-3"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
